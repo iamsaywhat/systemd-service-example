@@ -1,0 +1,11 @@
+[Unit]
+Description=my.service - enable cpu logging
+After=multi-user.target
+Requires=multi-user.target
+
+[Service]
+ExecStart=/etc/systemd-script.sh
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
