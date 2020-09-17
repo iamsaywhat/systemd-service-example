@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo cp ./systemd-script.sh /etc/systemd-script.sh
+sudo cp ./my.service /etc/systemd/system/my.service
+sudo systemctl daemon-reload
+sudo systemctl enable my.service
+sudo systemctl start my.service
